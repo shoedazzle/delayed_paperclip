@@ -15,7 +15,7 @@ module DelayedPaperclip
     end
 
     def detect_background_task
-      return DelayedPaperclip::Jobs::DelayedJob if defined? ::Delayed::Job
+      return DelayedPaperclip::Jobs::DelayedJob if defined? ::Delayed
       return DelayedPaperclip::Jobs::Resque     if defined? ::Resque
     end
 
