@@ -1,1 +1,1 @@
-rvm gemset use delayed_paperclip --create
+rvm use ruby-1.9.3-p194@delayed_paperclip --create
